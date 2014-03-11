@@ -1,0 +1,17 @@
+script for demos
+
+demo 1: cursor
+1. start on help http://resources.arcgis.com/en/help/main/10.2/index.html#/SearchCursor/018w00000011000000/
+2. 
+
+demo 2: editor
+1. start on help page http://resources.arcgis.com/en/help/main/10.2/index.html#//018w00000005000000
+2. 
+
+demo 3 : arcpy.da List functions & walk
+1.
+2.
+
+demo 4: exporting to numpy
+1. 
+2.

@@ -1,0 +1,82 @@
+Code	Province	Canton	Area (km2)	Pop. (2008)
+101	San José	San José	44.62	352,366
+102	San José	Escazú	34.49	60,201
+103	San José	Desamparados	118.26	221,346
+104	San José	Puriscal	553.66	32,767
+105	San José	Tarrazú	297.50	16,419
+106	San José	Aserrí	167.10	56,422
+107	San José	Mora	162.04	24,333
+108	San José	Goicoechea	31.50	131,529
+109	San José	Santa Ana	61.42	39,905
+110	San José	Alajuelita	21.17	81,721
+111	San José	Vázquez de Coronado	222.20	63,098
+112	San José	Acosta	342.24	20,906
+113	San José	Tibás	8.15	81,478
+114	San José	Moravia	28.62	55,895
+115	San José	Montes de Oca	15.16	55,814
+116	San José	Turrubares	415.29	5,482
+117	San José	Dota	400.22	7,465
+118	San José	Curridabat	15.95	69,474
+119	San José	Pérez Zeledón	1,905.51	140,872
+120	San José	León Cortés Castro	120.80	13,288
+201	Alajuela	Alajuela	388.43	255,598
+202	Alajuela	San Ramón	1,018.64	77,380
+203	Alajuela	Grecia	395.72	74,860
+204	Alajuela	San Mateo	125.90	5,904
+205	Alajuela	Atenas	127.19	25,033
+206	Alajuela	Naranjo	126.62	42,637
+207	Alajuela	Palmares	38.06	33,401
+208	Alajuela	Poás	73.84	28,469
+209	Alajuela	Orotina	141.92	17,866
+210	Alajuela	San Carlos	3,347.98	151,322
+211	Alajuela	Alfaro Ruiz	155.13	12,368
+212	Alajuela	Valverde Vega	120.25	18,407
+213	Alajuela	Upala	1,580.67	44,556
+214	Alajuela	Los Chiles	1,358.86	23,902
+215	Alajuela	Guatuso	758.32	15,068
+301	Cartago	Cartago	287.77	149,657
+302	Cartago	Paraíso	411.91	60,005
+303	Cartago	La Unión	44.83	91,090
+304	Cartago	Jiménez	286.43	15,859
+305	Cartago	Turrialba	1,642.67	78,217
+306	Cartago	Alvarado	81.06	13,862
+307	Cartago	Oreamuno	202.31	44,403
+308	Cartago	El Guarco	167.69	39,223
+401	Heredia	Heredia	282.60	118,872
+402	Heredia	Barva	53.80	37,041
+403	Heredia	Santo Domingo	24.84	38,959
+404	Heredia	Santa Bárbara	53.21	33,334
+405	Heredia	San Rafael	48.39	42,398
+406	Heredia	San Isidro	26.96	18,028
+407	Heredia	Belén	12.15	22,400
+408	Heredia	Flores	6.96	17,298
+409	Heredia	San Pablo	7.53	23,370
+410	Heredia	Sarapiquí	2,140.54	54,537
+501	Guanacaste	Liberia	1,436.47	55,921
+502	Guanacaste	Nicoya	1,333.68	47,823
+503	Guanacaste	Santa Cruz	1,312.27	46,460
+504	Guanacaste	Bagaces	1,273.49	18,368
+505	Guanacaste	Carrillo	577.54	32,168
+506	Guanacaste	Cañas	682.20	27,970
+507	Guanacaste	Abangares	675.76	18,319
+508	Guanacaste	Tilarán	638.39	20,337
+509	Guanacaste	Nandayure	565.59	11,185
+510	Guanacaste	La Cruz	1,383.90	19,978
+511	Guanacaste	Hojancha	261.42	7,289
+601	Puntarenas	Puntarenas	1,842.33	118,928
+602	Puntarenas	Esparza	216.80	27,199
+603	Puntarenas	Buenos Aires	2,384.22	47,576
+604	Puntarenas	Montes de Oro	244.76	12,495
+605	Puntarenas	Osa	1,930.24	29,547
+606	Puntarenas	Aguirre	543.77	23,915
+607	Puntarenas	Golfito	1,753.96	39,699
+608	Puntarenas	Coto Brus	933.91	47,247
+609	Puntarenas	Parrita	478.79	13,940
+610	Puntarenas	Corredores	620.60	44,180
+611	Puntarenas	Garabito	316.31	13,165
+701	Limón	Limón	1,765.79	106,356
+702	Limón	Pococí	2,403.49	121,735
+703	Limón	Siquirres	860.19	60,881
+704	Limón	Talamanca	2,809.93	32,158
+705	Limón	Matina	772.64	39,961
+706	Limón	Guácimo	576.48	41,082

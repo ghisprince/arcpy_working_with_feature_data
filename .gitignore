@@ -1,0 +1,8 @@
+
+*.pyc
+*.psproj
+*.swp
+*.mxd
+CRI_adm.gdb
+Census2000CaseStudy
+junk
