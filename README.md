@@ -6,8 +6,9 @@ This repo contains demos (python scripts) and data for the _Working with Feature
 This presentation was given at the Esri dev summit 2014 in Palm Springs.
  
 ## Prerequisite
-ArcGIS - 10.2 or later 
-Python 2.7.x
+
+ - ArcGIS - 10.2 or later 
+ - Python 2.7.x
 
 ## Data
 Costa Rica administrative boundaries can be downloaded from www.gadm.org (Global Administrative Areas site), click data by country, and then choose 
