@@ -16,7 +16,8 @@ Costa Rica administrative boundaries can be downloaded from www.gadm.org (Global
 
 Costa Rica's canton is included in canton_pop.txt. The source of the data is the table "Cantons of Costa Rica" found at 
 http://en.wikipedia.org/wiki/Cantons_of_Costa_Rica 
-Included here under "Creative Commons Deed" as per http://creativecommons.org/licenses/by-sa/3.0/
-
+Included here under _Creative Commons Deed_ as per http://creativecommons.org/licenses/by-sa/3.0/
 
 "US Census 2000 Case Study" Data Model used in demo3 is not included, it can be downloaded from http://downloads2.esri.com/support/TechArticles/Census.pdf, though the demo can work with any geodatabase data.
+
+Once the data is downloaded run demos\demo_0_setup_data.py

@@ -15,12 +15,15 @@ def pprint_domain(domain):
     """
     Pretty prints a gdb domain
     """
-    print("Domain name : {}".format(domain.name))
-    print("Domain type : {}".format(domain.type))
+    print("")
+    print("Domain name      : {}".format(domain.name))
+    print("Domain type      : {}".format(domain.domainType))
+    print("Domain FieldType : {}".format(domain.type))
     if domain.domainType == "CodedValue":
         coded_values = domain.codedValues
+        print("Coded Values")
         for k, v in coded_values.iteritems():
-            print("{} : {}".format(k, v))
+            print("{}, {}".format(k, v))
     elif domain.domainType == "Range":
         print("Min: {}".format(domain.range[0]))
         print("Max: {}".format(domain.range[1]))
@@ -42,6 +45,7 @@ for dirpath, dirnames, filenames in os.walk(os.getcwd()):
             print(mdb)
             for domain in arcpy.da.ListDomains(mdb):
                 pprint_domain(domain)
+
 
 from pprint import pprint
 for dirpath, dirnames, filenames in arcpy.da.Walk(os.getcwd(), datatype="FeatureClass"):

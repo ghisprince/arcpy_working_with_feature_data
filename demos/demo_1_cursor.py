@@ -1,5 +1,3 @@
-#  NOPE  ##### -*- coding: UTF-8 -*-
-
 """
 
  arcpy.da.SearchCursor doc
@@ -18,11 +16,10 @@ arcpy.env.workspace = os.getcwd() + "\\demo.gdb"
 with arcpy.da.SearchCursor("canton", "*") as cursor:
     for row in cursor:
         print (row)
-        break
 
 
 # List canton with no pop
-with arcpy.da.SearchCursor("canton", ("NAME_2", "pop_2008"), "pop_2008 IS NULL" ) as cursor:
+with arcpy.da.SearchCursor("canton", ("NAME_2", "pop_2008"), "pop_2008 IS NULL") as cursor:
     for row in cursor:
         print (row[0])
 

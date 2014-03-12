@@ -3,6 +3,6 @@
 *.psproj
 *.swp
 *.mxd
-CRI_adm.gdb
+*.gdb
 Census2000CaseStudy
 junk

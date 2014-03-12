@@ -27,8 +27,7 @@ print("Min : {}".format(arr['pop_2008'].max()))
 
 arr = arcpy.da.TableToNumPyArray("canton", ("canton", "area_km2", "pop_2008",))
 print(arr)
+
 print(arr.dtype)
-
-
 
 print ("\nFINISHED")
