@@ -12,6 +12,7 @@ import os
 
 arcpy.env.workspace = os.getcwd() + "\\demo.gdb"
 
+# TableToNumPyArray signature is much like da.SearchCursor
 arr = arcpy.da.TableToNumPyArray("canton", "pop_2008")
 
 print(arr)
@@ -24,10 +25,9 @@ print("Std : {:.1}".format(arr['pop_2008'].std()))
 print("Min : {}".format(arr['pop_2008'].min()))
 print("Min : {}".format(arr['pop_2008'].max()))
 
-
 arr = arcpy.da.TableToNumPyArray("canton", ("canton", "area_km2", "pop_2008",))
-print(arr)
 
+print(arr)
 print(arr.dtype)
 
 print ("\nFINISHED")

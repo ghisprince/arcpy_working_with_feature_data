@@ -5,23 +5,30 @@ All code shown in this demo can be downloaded from github.com/ghisprince/arcpy_w
 
 demo 1: cursor
  - start in map, describe missing join problem
- - what is a cursor http://resources.arcgis.com/en/help/main/10.2/index.html#/SearchCursor/018w00000011000000/
+ - what is a cursor 
  - pyscripter
 
 
 demo 2: editor
  - remove layer from map
  - context editor
- - help page http://resources.arcgis.com/en/help/main/10.2/index.html#//018w00000005000000
+ - run -fails, leaving data in unknown state, bad
+ - add editor context, run -fails, leaving data in known state
+ - fix addField, run -succeeds
 
-
+ 
 demo 3 : arcpy.da List functions & walk
  - gp origins
  - tour of doc (arcpy functions, arcpy.da functions...)
- - show code
+ - code
  - we improve/get better at python/pythonic
+ - gp tools for field/subtype/domain management
 
 
 demo 4: exporting to numpy
  - intro (C, n-dimensional array, views on contiguous memory buffers)
+   - not a python list (homogenous)
+   - "num" == numbers, does not support all types
+   - no nan integer
  - show code
+ - end you  can bring it back to gdb using NumPyToTable or ExtendTable

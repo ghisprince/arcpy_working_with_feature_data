@@ -24,8 +24,6 @@ arcpy.CalculateField_management("canton", "provincia", expression="!NAME_1!", ex
 
 ####
 
-
-
 print("\nFINISHED")
 
 
@@ -38,7 +36,7 @@ def pprint_table(tab):
     print("")
     def pprint(l):
         print(u"{:<10}\t{:<20}\t{:<20}\t{:<20}".format(*l))
-    with arcpy.da.SearchCursor(tab, ['ObjectID', 'pop_per_km2', 'NAME_1', "provincia"],) as cursor:
+    with arcpy.da.SearchCursor(tab, ['ObjectID', 'NAME_1', "provincia", 'pop_per_km2'],) as cursor:
         pprint (cursor.fields)
         for row in cursor:
             pprint(row)

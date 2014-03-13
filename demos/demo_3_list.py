@@ -46,6 +46,13 @@ for dirpath, dirnames, filenames in os.walk(os.getcwd()):
             for domain in arcpy.da.ListDomains(mdb):
                 pprint_domain(domain)
 
+arcpy.env.workspace = os.path.join(os.path.join(os.getcwd(), r"Census2000CaseStudy\Census 2000 schema.gdb\Census2000DataSample"))
+
+
+for fc in arcpy.ListFeatureClasses():
+    for f in arcpy.ListFields(fc):
+        if f.domain:
+            print("fc={}, field={}, domain={}".format(fc, f.name, f.domain))
 
 from pprint import pprint
 for dirpath, dirnames, filenames in arcpy.da.Walk(os.getcwd(), datatype="FeatureClass"):
