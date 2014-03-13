@@ -1,5 +1,8 @@
 Script for demos 1-4
 
+All code shown in this demo can be downloaded from github.com/ghisprince/arcpy_working_with_feature_data
+
+
 demo 1: cursor
  - start in map, describe missing join problem
  - what is a cursor http://resources.arcgis.com/en/help/main/10.2/index.html#/SearchCursor/018w00000011000000/

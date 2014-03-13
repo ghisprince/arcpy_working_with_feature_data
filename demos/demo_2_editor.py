@@ -24,12 +24,9 @@ arcpy.CalculateField_management("canton", "provincia", expression="!NAME_1!", ex
 
 ####
 
-arcpy.DeleteField_management("canton", ["NAME_1"])
 
 
 print("\nFINISHED")
-
-
 
 
 ####
@@ -40,8 +37,8 @@ def pprint_table(tab):
     """
     print("")
     def pprint(l):
-        print(u"{:<10}\t{:<12}\t{:<10}\t{:<20}\t{:<10}\t{:<20}\t{:<12}\t{:<10}\t{:<12.2}\t{:<12}".format(*l))
-    with arcpy.da.SearchCursor(tab, [i.name for i in arcpy.ListFields(tab) if (not 'Shape' in i.name)],) as cursor:
+        print(u"{:<10}\t{:<20}\t{:<20}\t{:<20}".format(*l))
+    with arcpy.da.SearchCursor(tab, ['ObjectID', 'pop_per_km2', 'NAME_1', "provincia"],) as cursor:
         pprint (cursor.fields)
         for row in cursor:
             pprint(row)
@@ -58,3 +55,5 @@ except arcpy.ExecuteError as e:
     print(e)
 
 pprint_table("canton")
+
+####
