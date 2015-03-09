@@ -1,9 +1,9 @@
 """
  arcpy.da.Walk Doc
- http://resources.arcgis.com/en/help/main/10.2/index.html#/Walk/018w00000023000000/
+ 
 
  arcpy.da.ListDomains doc
- http://resources.arcgis.com/en/help/main/10.2/index.html#/ListDomains/018w0000001z000000/
+ http://desktop.arcgis.com/en/desktop/latest/analyze/arcpy-data-access/walk.htm
 
 """
 

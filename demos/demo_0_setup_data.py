@@ -4,7 +4,7 @@ import os
 arcpy.env.overwriteOutput = True
 arcpy.env.workspace = os.path.dirname(__file__)
 
-if not arcpy.Exists(os.getcwd() + r"\demo.gdb"):
+if not arcpy.Exists(os.getcwd() + "\\demo.gdb"):
     arcpy.CreateFileGDB_management(os.getcwd(), "demo.gdb")
 
 # Load data
