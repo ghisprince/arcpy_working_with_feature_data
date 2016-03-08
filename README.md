@@ -4,7 +4,7 @@ Shortened url to this repro: http://esriurl.com/10618
 
 This repo contains demos (python scripts) and data for the _Working with Feature Data Using ArcPy_ technical session.
 
-This presentation was given at the Esri dev summit 2014 in Palm Springs.
+This presentation was given at the Esri Developer Summit 2014 & 2015 in Palm Springs.
  
 ## Prerequisite
 

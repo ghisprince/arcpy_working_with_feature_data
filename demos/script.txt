@@ -5,8 +5,9 @@ All code shown in this demo can be downloaded from github.com/ghisprince/arcpy_w
 
 demo 1: cursor
  - start in map, describe missing join problem
- - what is a cursor 
- - pyscripter
+ - what is a cursor
+ - search cursor: http://desktop.arcgis.com/en/desktop/latest/analyze/arcpy-data-access/searchcursor-class.htm
+ - python ide
 
 
 demo 2: editor
@@ -15,15 +16,16 @@ demo 2: editor
  - run -fails, leaving data in unknown state, bad
  - add editor context, run -fails, leaving data in known state
  - fix addField, run -succeeds
+ - help page: http://desktop.arcgis.com/en/desktop/latest/analyze/arcpy-data-access/editor.htm
 
- 
+
+
 demo 3 : arcpy.da List functions & walk
  - gp origins
  - tour of doc (arcpy functions, arcpy.da functions...)
  - code
  - we improve/get better at python/pythonic
- - gp tools for field/subtype/domain management
-
+ - help page: http://desktop.arcgis.com/en/desktop/latest/analyze/arcpy-data-access/walk.htm
 
 demo 4: exporting to numpy
  - intro (C, n-dimensional array, views on contiguous memory buffers)

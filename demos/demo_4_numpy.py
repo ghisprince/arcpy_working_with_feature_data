@@ -1,6 +1,6 @@
 """
  Working with NumPy in ArcGIS Doc
- http://desktop.arcgis.com/en/desktop/latest/analyze/python/working-with-numpy-in-arcgis.htm
+ http://desktop.arcgis.com/en/arcmap/latest/analyze/python/working-with-numpy-in-arcgis.htm
 
  has links to doc for: TableToNumPyArray, NumPyArrayToTable, ExtendTable,
                        RasterToNumPyArray, NumPyArrayToRaster
