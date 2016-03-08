@@ -31,4 +31,5 @@ demo 4: exporting to numpy
    - "num" == numbers, does not support all types
    - no nan integer
  - show code
- - end you  can bring it back to gdb using NumPyToTable or ExtendTable
+ - can bring it back to gdb using NumPyToTable or ExtendTable
+ - pandas - adds to numpy array

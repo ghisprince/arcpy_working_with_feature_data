@@ -1,10 +1,10 @@
 """
 
  arcpy.da.Editor doc
- http://resources.arcgis.com/en/help/main/10.2/index.html#/Editor/018w00000005000000/
+ http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-data-access/editor.htm
 
  Fields toolset doc
- http://resources.arcgis.com/en/help/main/10.2/index.html#/An_overview_of_the_Fields_toolset/001700000046000000/
+ http://desktop.arcgis.com/en/arcmap/latest/tools/data-management-toolbox/an-overview-of-the-fields-toolset.htm
 
 """
 

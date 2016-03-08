@@ -1,10 +1,10 @@
 """
 
  arcpy.da.SearchCursor doc
- http://resources.arcgis.com/en/help/main/10.2/index.html#/SearchCursor/018w00000011000000/
+ http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-data-access/searchcursor-class.htm
 
  arcpy.da.UpdateCursor doc
- http://resources.arcgis.com/en/help/main/10.2/index.html#/UpdateCursor/018w00000014000000/
+ http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-data-access/updatecursor-class.htm
 
 """
 

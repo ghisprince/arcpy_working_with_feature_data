@@ -1,3 +1,4 @@
+Shortened url to this repro: http://esriurl.com/10618
 
 ## Working with Feature Data Using ArcPy (demos)
 

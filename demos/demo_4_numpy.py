@@ -1,6 +1,6 @@
 """
  Working with NumPy in ArcGIS Doc
- http://resources.arcgis.com/en/help/main/10.2/index.html#//002z00000028000000
+ http://desktop.arcgis.com/en/desktop/latest/analyze/python/working-with-numpy-in-arcgis.htm
 
  has links to doc for: TableToNumPyArray, NumPyArrayToTable, ExtendTable,
                        RasterToNumPyArray, NumPyArrayToRaster
@@ -23,11 +23,20 @@ print("Costa Rica canton population facts")
 print("Sum : {:,}".format(arr['pop_2008'].sum()))
 print("Std : {:.1}".format(arr['pop_2008'].std()))
 print("Min : {}".format(arr['pop_2008'].min()))
-print("Min : {}".format(arr['pop_2008'].max()))
+print("Max : {}".format(arr['pop_2008'].max()))
 
-arr = arcpy.da.TableToNumPyArray("canton", ("canton", "area_km2", "pop_2008",))
+arr = arcpy.da.TableToNumPyArray("canton", ("canton", "provincia", "area_km2", "pop_2008",))
 
 print(arr)
 print(arr.dtype)
+
+print("{:.2} people/km2".format(arr['pop_2008'].sum() / arr['area_km2'].sum()))
+
+import pandas as pd
+df = pd.DataFrame(arr,)
+print(df.columns)
+print(df.sort('pop_2008', ascending=False).head())
+
+print(df.groupby('provincia').sum())
 
 print ("\nFINISHED")
