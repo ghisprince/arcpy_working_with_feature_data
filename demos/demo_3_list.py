@@ -3,7 +3,7 @@
  http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-data-access/walk.htm
 
  arcpy.da.ListDomains doc
- http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy-data-access/listdomains.htm
+ http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-data-access/listdomains.htm
 
 """
 

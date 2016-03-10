@@ -32,11 +32,12 @@ print(arr.dtype)
 
 print("{:.2} people/km2".format(arr['pop_2008'].sum() / arr['area_km2'].sum()))
 
+print("-"*40)
 import pandas as pd
 df = pd.DataFrame(arr,)
 print(df.columns)
 print(df.sort('pop_2008', ascending=False).head())
-
+print("-"*40)
 print(df.groupby('provincia').sum())
 
 print ("\nFINISHED")

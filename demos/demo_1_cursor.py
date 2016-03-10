@@ -1,4 +1,5 @@
 """
+                               http://esriurl.com/10618
 
  arcpy.da.SearchCursor doc
  http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-data-access/searchcursor-class.htm
@@ -14,6 +15,7 @@ import os
 arcpy.env.workspace = os.getcwd() + "\\demo.gdb"
 
 with arcpy.da.SearchCursor("canton", "*") as cursor:
+    print(cursor.fields)
     for row in cursor:
         print (row)
 

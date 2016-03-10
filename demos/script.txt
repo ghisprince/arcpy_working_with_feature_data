@@ -19,7 +19,6 @@ demo 2: editor
  - help page: http://desktop.arcgis.com/en/desktop/latest/analyze/arcpy-data-access/editor.htm
 
 
-
 demo 3 : arcpy.da List functions & walk
  - gp origins
  - tour of doc (arcpy functions, arcpy.da functions...)
@@ -27,8 +26,9 @@ demo 3 : arcpy.da List functions & walk
  - we improve/get better at python/pythonic
  - help page: http://desktop.arcgis.com/en/desktop/latest/analyze/arcpy-data-access/walk.htm
 
+ 
 demo 4: exporting to numpy
- - intro (C, n-dimensional array, views on contiguous memory buffers)
+ - intro (C, n-dimensional array, views on contiguous memory buffers, fast processing)
    - not a python list (homogenous)
    - "num" == numbers, does not support all types
    - no nan integer
