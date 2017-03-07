@@ -12,6 +12,19 @@
 import arcpy
 import os
 
+def pprint_table(tab):
+    """
+     Pretty print of table"s records
+    """
+    print("-"*80)
+
+    def pprint(l):
+        print(u"{:<10}\t{:<16}\t{:<16}\t{:<16}\t{:<16}".format(*l))
+    with arcpy.da.SearchCursor(tab, ["ObjectID", "NAME_1", "provincia", "area_km2", "pop_per_km2"],) as cursor:
+        pprint(cursor.fields)
+        for row in cursor:
+            pprint(row)
+
 arcpy.env.workspace = os.getcwd() + "\\demo.gdb"
 arcpy.DeleteField_management("canton", ["pop_per_km2", "provincia"])
 
@@ -19,37 +32,25 @@ arcpy.AddField_management("canton", "pop_per_km2", "DOUBLE")
 arcpy.AddField_management("canton", "provincia", "TEXT", field_length=9)
 
 ####
-arcpy.CalculateField_management("canton", "area_km2", expression="!shape.geodesicArea@SQUAREKILOMETERS!", expression_type="PYTHON")
-arcpy.CalculateField_management("canton", "pop_per_km2", expression="!pop_2008! / !area_km2!", expression_type="PYTHON")
-arcpy.CalculateField_management("canton", "provincia", expression="!NAME_1!", expression_type="PYTHON")
+
+try:
+    arcpy.CalculateField_management("canton", "area_km2", expression="!shape.geodesicArea@SQUAREKILOMETERS!", expression_type="PYTHON")
+    arcpy.CalculateField_management("canton", "pop_per_km2", expression="!pop_2008! / !area_km2!", expression_type="PYTHON")
+    arcpy.CalculateField_management("canton", "provincia", expression="!NAME_1!", expression_type="PYTHON")
+except Exception as e:
+    print(e)
 
 ####
-
-print("\nFINISHED")
-
-
-####
-
-def pprint_table(tab):
-    """
-     Pretty print of table's records
-    """
-    print("-"*80)
-    def pprint(l):
-        print(u"{:<10}\t{:<20}\t{:<20}\t{:<20}".format(*l))
-    with arcpy.da.SearchCursor(tab, ['ObjectID', 'NAME_1', "provincia", 'pop_per_km2'],) as cursor:
-        pprint (cursor.fields)
-        for row in cursor:
-            pprint(row)
-
 
 pprint_table("canton")
+print("\nFINISHED")
+
+####
 
 try:
     with arcpy.da.Editor(arcpy.env.workspace) as editor:
         arcpy.CalculateField_management("canton", "area_km2", expression="!shape.geodesicArea@SQUAREKILOMETERS!", expression_type="PYTHON")
         arcpy.CalculateField_management("canton", "pop_per_km2", expression="!pop_2008! / !area_km2!", expression_type="PYTHON")
-        pprint_table("canton")
         arcpy.CalculateField_management("canton", "provincia", expression="!NAME_1!", expression_type="PYTHON")
 except arcpy.ExecuteError as e:
     print(e)

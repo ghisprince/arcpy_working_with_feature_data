@@ -45,17 +45,19 @@ for i in list(set(tab) - set(fc)):
     print(i)
 
 
-lookup = {u'Le\xf3n Cort\xe9s'      : u'Le\xf3n Cort\xe9s Castro',
-          u'V\xe1squez de Coronado' : u'V\xe1zquez de Coronado' }
+lookup = {u'Le\xf3n Cort\xe9s': u'Le\xf3n Cort\xe9s Castro',
+          u'V\xe1squez de Coronado': u'V\xe1zquez de Coronado' }
 
 
 with arcpy.da.UpdateCursor("canton",
-                           field_names = ("NAME_2", "Canton", "area_km2","pop_2008"),
-                           where_clause = u"NAME_2 IN ('Le\xf3n Cort\xe9s', 'V\xe1squez de Coronado') ") as fc_cursor:
+                           field_names=("NAME_2", "Canton", "area_km2", "pop_2008"),
+                           where_clause=u"NAME_2 IN ('Le\xf3n Cort\xe9s', 'V\xe1squez de Coronado') ") \
+                                                    as fc_cursor:
     for fc_row in fc_cursor:
         with arcpy.da.SearchCursor("canton_pop",
-                                   field_names = ("Canton", "area_km2","pop_2008"),
-                                   where_clause = u"Canton = '{}'".format(lookup[fc_row[0]])) as tab_cursor:
+                                   field_names=("Canton", "area_km2", "pop_2008"),
+                                   where_clause=u"Canton = '{}'".format(lookup[fc_row[0]])) \
+                                                    as tab_cursor:
             for tab_row in tab_cursor:
                 print("fc_row  : {}".format(fc_row))
                 print("tab_row : {}".format(tab_row))

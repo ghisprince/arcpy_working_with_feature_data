@@ -27,17 +27,22 @@ def pprint_domain(domain):
         print("Min: {}".format(domain.range[0]))
         print("Max: {}".format(domain.range[1]))
 
+print("="*80)
+cwd = os.getcwd()
+print("current working dir: " + cwd)
 
 # Using arcpy.da.Walk
 print("arcpy da walk")
-for dirpath, dirnames, filenames in arcpy.da.Walk(os.getcwd(), datatype="FeatureClass"):
+for dirpath, dirnames, filenames in arcpy.da.Walk(cwd, datatype="FeatureClass"):
+    print(dirpath)
     for filename in filenames:
-        print(os.path.join(dirpath, filename))
+        print(" - " + filename)
 
 
 # Using os.walk and arcpy.da.ListDomains
-print("os walk")
-for dirpath, dirnames, filenames in os.walk(os.getcwd()):
+print("="*80)
+print("os walk and listDomain")
+for dirpath, dirnames, filenames in os.walk(cwd):
     for filename in filenames:
         if ".mdb" in filename:
             mdb = os.path.join(dirpath, filename)
@@ -47,7 +52,7 @@ for dirpath, dirnames, filenames in os.walk(os.getcwd()):
 
 
 # Using ListFeatureClasses and ListFields
-arcpy.env.workspace = os.path.join(os.getcwd(), r"Census2000CaseStudy\Census 2000 schema.gdb\Census2000DataSample")
+arcpy.env.workspace = os.path.join(cwd, r"Census2000CaseStudy\Census 2000 schema.gdb\Census2000DataSample")
 
 for fc in arcpy.ListFeatureClasses():
     for f in arcpy.ListFields(fc):
@@ -56,8 +61,9 @@ for fc in arcpy.ListFeatureClasses():
 
 
 # Using arcpy.da.ListSubtypes
+print("="*80)
 from pprint import pprint
-for dirpath, dirnames, filenames in arcpy.da.Walk(os.getcwd(), datatype="FeatureClass"):
+for dirpath, dirnames, filenames in arcpy.da.Walk(cwd, datatype="FeatureClass"):
     for filename in filenames:
         fc = os.path.join(dirpath, filename)
         st = arcpy.da.ListSubtypes(fc)

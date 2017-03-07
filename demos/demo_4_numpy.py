@@ -15,6 +15,7 @@ arcpy.env.workspace = os.getcwd() + "\\demo.gdb"
 # TableToNumPyArray signature is much like da.SearchCursor
 arr = arcpy.da.TableToNumPyArray("canton", "pop_2008")
 
+print(len(arr))
 print(arr)
 print(arr.dtype)
 
@@ -30,14 +31,15 @@ arr = arcpy.da.TableToNumPyArray("canton", ("canton", "provincia", "area_km2", "
 print(arr)
 print(arr.dtype)
 
+print("="*80)
 print("{:.2} people/km2".format(arr['pop_2008'].sum() / arr['area_km2'].sum()))
 
-print("-"*40)
+print("="*80)
 import pandas as pd
 df = pd.DataFrame(arr,)
 print(df.columns)
-print(df.sort('pop_2008', ascending=False).head())
-print("-"*40)
+print(df.sort_values(by='pop_2008', ascending=False).head())
+print("="*80)
 print(df.groupby('provincia').sum())
 
 print ("\nFINISHED")
