@@ -31,6 +31,7 @@ print("="*80)
 cwd = os.getcwd()
 print("current working dir: " + cwd)
 
+
 # Using arcpy.da.Walk
 print("arcpy da walk")
 for dirpath, dirnames, filenames in arcpy.da.Walk(cwd, datatype="FeatureClass"):

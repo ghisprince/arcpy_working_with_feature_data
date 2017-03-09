@@ -21,7 +21,8 @@ with arcpy.da.SearchCursor("canton", "*") as cursor:
 
 
 # List canton with no pop
-with arcpy.da.SearchCursor("canton", ("NAME_2", "pop_2008"), "pop_2008 IS NULL") as cursor:
+with arcpy.da.SearchCursor("canton", ("NAME_2", "pop_2008"),
+                           "pop_2008 IS NULL") as cursor:
     for row in cursor:
         print (row[0])
 
